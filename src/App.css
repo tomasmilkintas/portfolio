@@ -20,12 +20,12 @@
     color: white;
 }
 
-.App-link {
-    color: #61dafb;
-}
-
 .icons {
     display: flex;
     justify-content: space-between;
     margin: 12px 12px 30px 12px;
+}
+
+.icons:hover {
+    color: #6c63ff;
 }
