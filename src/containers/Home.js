@@ -10,10 +10,14 @@ import freelancer from "../freelancer.svg";
 
 const Home = (props) => {
     return (
-        <Container maxWidth="xl" disableGutters="true" style={{ backgroundColor: "salmon" }}>
+        <Container maxWidth="xl" disableGutters="true">
             <header className="App-header">
                 <img src={freelancer} className="App-logo" alt="logo" />
                 <h1>Tomas Milkintas' Portfolio Site</h1>
+                <div className="links" aria-label="breadcrumb">
+                    <ModalAbout className="modals" />
+                    <ModalVision className="modals" />
+                </div>
                 <div>
                     <Link
                         href="https://www.linkedin.com/in/tomas-milkintas/"
@@ -31,10 +35,6 @@ const Home = (props) => {
                     >
                         <GitHubIcon className="icons" fontSize="large" />
                     </Link>
-                </div>
-                <div className="links" aria-label="breadcrumb">
-                    <ModalAbout />
-                    <ModalVision />
                 </div>
             </header>
         </Container>

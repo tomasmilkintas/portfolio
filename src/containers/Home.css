@@ -1,0 +1,14 @@
+.links {
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    top: 8vh;
+
+    /* margin-bottom: 5vh; */
+}
+
+.modals {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 5vh;
+}
