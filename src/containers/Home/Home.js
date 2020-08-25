@@ -4,9 +4,9 @@ import { Container } from "@material-ui/core";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Link from "@material-ui/core/Link";
-import ModalAbout from "./ModalAbout";
-import ModalVision from "./ModalVision";
-import freelancer from "../freelancer.svg";
+import ModalAbout from "../Modals/ModalAbout";
+import ModalVision from "../Modals/ModalVision";
+import freelancer from "../../freelancer.svg";
 
 const Home = (props) => {
     return (
@@ -15,8 +15,9 @@ const Home = (props) => {
                 <img src={freelancer} className="App-logo" alt="logo" />
                 <h1>Tomas Milkintas' Portfolio Site</h1>
                 <div className="links" aria-label="breadcrumb">
-                    <ModalAbout className="modals" />
-                    <ModalVision className="modals" />
+                    <ModalAbout />
+                    <ModalVision />
+                    <Link href="/projects"> Projects </Link>
                 </div>
                 <div>
                     <Link

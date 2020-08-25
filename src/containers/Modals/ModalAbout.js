@@ -4,8 +4,14 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import Button from "@material-ui/core/Button";
+// import "../Home/Home.css";
 
 const useStyles = makeStyles((theme) => ({
+    margin: {
+        margin: theme.spacing(1),
+        padding: theme.spacing(1.5),
+        width: "180px",
+    },
     modal: {
         display: "flex",
         alignItems: "center",
@@ -32,10 +38,17 @@ export default function TransitionsModal() {
     };
 
     return (
-        <div>
-            <Button className="modals" variant="contained" color="primary" onClick={handleOpen}>
-                Vision
+        <div className="modals">
+            <Button
+                variant="contained"
+                color="primary"
+                size="large"
+                className={classes.margin}
+                onClick={handleOpen}
+            >
+                About Me
             </Button>
+
             <Modal
                 aria-labelledby="transition-modal-title"
                 aria-describedby="transition-modal-description"
@@ -50,12 +63,22 @@ export default function TransitionsModal() {
             >
                 <Fade in={open}>
                     <div className={classes.paper}>
-                        <h2 id="transition-modal-title">Vision</h2>
+                        <h2 id="transition-modal-title">About</h2>
                         <p id="transition-modal-description">
                             {" "}
-                            This is the Vision Section of my portfolio. Let me tell you about the
-                            vision I have for myself and for the future of tech.
+                            Up and Coming Web developer with primary focus on ReactJS. Skills
+                            include:
                         </p>
+                        <ul>
+                            <li>ReactJS</li>
+                            <li>Javascript</li>
+                            <li>Redux</li>
+                            <li>Serverless Framework</li>
+                            <li>Firebase</li>
+                            <li>Git</li>
+                            <li>Storybook</li>
+                            <li>Figma</li>
+                        </ul>
                     </div>
                 </Fade>
             </Modal>
