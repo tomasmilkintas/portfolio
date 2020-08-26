@@ -7,7 +7,6 @@ const Projects = (props) => {
     return (
         <div className="main">
             <Link href="/"> Home </Link>
-            <h1>This is the Projects' Section of my portfolio</h1>
             <ProjectsCarousel />
         </div>
     );

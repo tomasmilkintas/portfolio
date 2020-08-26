@@ -21,6 +21,8 @@ const useStyles = makeStyles((theme) => ({
         border: "2px solid #000",
         boxShadow: theme.shadows[5],
         padding: theme.spacing(2, 4, 3),
+        height: "30vh",
+        width: "30vw",
     },
 }));
 
@@ -64,8 +66,10 @@ export default function TransitionsModal() {
                         <h2 id="transition-modal-title">Vision</h2>
                         <p id="transition-modal-description">
                             {" "}
-                            This is the Vision Section of my portfolio. Let me tell you about the
-                            vision I have for myself and for the future of tech.
+                            I'm really excited to be part of the tech industry in this day and age.
+                            With the VR, AR, IoT, Machine Learning and quantum computing making
+                            waves, left and right, it's a great time to be alive and take part in it
+                            all!
                         </p>
                     </div>
                 </Fade>

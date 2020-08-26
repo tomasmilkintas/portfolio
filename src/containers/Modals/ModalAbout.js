@@ -4,7 +4,6 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import Button from "@material-ui/core/Button";
-// import "../Home/Home.css";
 
 const useStyles = makeStyles((theme) => ({
     margin: {
@@ -22,6 +21,8 @@ const useStyles = makeStyles((theme) => ({
         border: "2px solid #000",
         boxShadow: theme.shadows[5],
         padding: theme.spacing(2, 4, 3),
+        height: "30vh",
+        width: "30vw",
     },
 }));
 
@@ -65,20 +66,14 @@ export default function TransitionsModal() {
                     <div className={classes.paper}>
                         <h2 id="transition-modal-title">About</h2>
                         <p id="transition-modal-description">
-                            {" "}
-                            Up and Coming Web developer with primary focus on ReactJS. Skills
-                            include:
+                            Fascinated with the way development works on websites and web apps
+                            alike. How a few lines of code can become something so extraordinary.
                         </p>
-                        <ul>
-                            <li>ReactJS</li>
-                            <li>Javascript</li>
-                            <li>Redux</li>
-                            <li>Serverless Framework</li>
-                            <li>Firebase</li>
-                            <li>Git</li>
-                            <li>Storybook</li>
-                            <li>Figma</li>
-                        </ul>
+
+                        <p>
+                            Actively looking for a junior developer position within a dynamic,
+                            innovative and collaborative team.
+                        </p>
                     </div>
                 </Fade>
             </Modal>
