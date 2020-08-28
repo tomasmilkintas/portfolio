@@ -9,74 +9,35 @@ import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import Link from "@material-ui/core/Link";
 
-import images from "../../assets/images";
-
-const carouselSteps = [
-    {
-        label: "To-do List App",
-        imgPath: images[2],
-        description: `After doing the "Picture MasterPiece" I wanted a more ambitious project. 
-        Everyone seems to do to-do list apps lately, but I wanted to make it bigger and better.
-        The idea was to have individual users create their own list of tasks, which are stored
-        in the database. Both the authentication and the data storage was accomplished using Firebase.`,
-        website: "https://magical-list.netlify.app/",
-        github: "https://github.com/tomasmilkintas/Todo-List-App",
-    },
-    {
-        label: "Picture MasterPiece",
-        imgPath: images[1],
-        description: `This was a mini project playing with the canvas feature
-        and drawing things on it. The tough part about it turned out to be saving the image, 
-        because there are a few layers, the one you draw on and the background image.
-        To combine that proved to be challenging, but a great little experiment nevertheless.`,
-        website: "https://picture-masterpiece.netlify.app/",
-        github: "https://github.com/tomasmilkintas/pictureRender",
-    },
-    {
-        label: "Burger Builder",
-        imgPath: images[0],
-        description: `This project was my first ever project using React. Now I can't take much
-        credit for it, as I followed a tutorial to get it working, but I think it's definitely
-        worthy of a mention as that's what got me into ReactJS and showed me the different and exciting
-        ways to utilize it.`,
-        website: "https://react-my-burger-app-660cf.firebaseapp.com/",
-        github: "https://github.com/tomasmilkintas/burger-app",
-    },
-    {
-        label: "Serverless Notes Storing App",
-        imgPath: images[3],
-        description: `The Notes Storing App using both the backend and the frontend to connect it
-        using the Serverless Framework. Serverless Framework works through AWS services, so got a
-        chance to utilize quite a few of their services (IAM, Cognito, S3, Route53, DynamoDB, 
-        CloudWatch, API Gateway). In the picture you see card details being collected. This allows
-        to buy more space for your storage using Stripe service`,
-        website: "https://serverless-stack-app.netlify.app/",
-        github: "https://github.com/tomasmilkintas/serverless-stack-client",
-    },
-];
+import carouselSteps from "./carouselSteps";
+import { Card } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: "45vw",
-        maxHeight: "80vh",
-        height: "80vh",
+        maxWidth: "70%",
+        maxHeight: "70%",
+        height: "70%",
         flexGrow: 1,
         margin: "0 auto",
-        border: "1px solid red",
         backgroundColor: "#f3f0f0",
         color: "black",
+        overflowY: "scroll",
     },
     img: {
-        maxWidth: "25vw",
-        maxHeight: "50vh",
-        height: "50vh",
+        maxWidth: "90%",
+        maxHeight: "70%",
+        height: "70%",
         overflow: "hidden",
         display: "block",
         width: "100%",
-        margin: "5vh auto 0",
+        margin: "3vh auto",
     },
     actions: {
-        display: "block",
+        display: "flex",
+        justifyContent: "center",
+    },
+    p: {
+        overflow: "scroll",
     },
 }));
 
@@ -95,17 +56,16 @@ export default function TextMobileStepper() {
     };
 
     return (
-        <div className={classes.root}>
-            <img
-                className={classes.img}
-                src={carouselSteps[activeStep].imgPath}
-                alt={carouselSteps[activeStep].label}
-            />
-
+        <Card className={classes.root}>
             <CardContent>
                 <Typography gutterBottom variant="h4" component="h2">
                     {carouselSteps[activeStep].label}
                 </Typography>
+                <img
+                    className={classes.img}
+                    src={carouselSteps[activeStep].imgPath}
+                    alt={carouselSteps[activeStep].label}
+                />
                 <Typography variant="subtitle1" component="p">
                     {carouselSteps[activeStep].description}
                 </Typography>
@@ -124,8 +84,8 @@ export default function TextMobileStepper() {
             </CardActions>
             <MobileStepper
                 steps={maxSteps}
-                position="static"
-                variant="text"
+                position="bottom"
+                variant="dots"
                 activeStep={activeStep}
                 nextButton={
                     <Button
@@ -144,6 +104,6 @@ export default function TextMobileStepper() {
                     </Button>
                 }
             />
-        </div>
+        </Card>
     );
 }

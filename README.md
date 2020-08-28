@@ -21,3 +21,10 @@ the web development / software engineering path.
 Projects will showcase my current and past work and the technologies used. A brief description
 with links to the hosted projects, as well as the link to individual github repositories for
 deeper dive into the code itself.
+
+### Technology
+
+For the creation of this project the following were used:
+
+-   ReactJS
+-   Semanti-ui

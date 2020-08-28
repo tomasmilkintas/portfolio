@@ -6,23 +6,22 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import Link from "@material-ui/core/Link";
 import ModalAbout from "../Modals/ModalAbout";
 import ModalVision from "../Modals/ModalVision";
+import ModalProjects from "../Modals/ModalProjects";
 import freelancer from "../../freelancer.svg";
-import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core/styles";
+// import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles((theme) => ({
-    margin: {
-        margin: theme.spacing(1),
-        padding: theme.spacing(1.5),
-        width: "180px",
-    },
-    text: {
-        color: "white",
-    },
-}));
+// const useStyles = makeStyles((theme) => ({
+//     margin: {
+//         margin: theme.spacing(1),
+//         padding: theme.spacing(1.5),
+//         width: "180px",
+//     },
+//     text: {
+//         color: "white",
+//     },
+// }));
 
 const Home = (props) => {
-    const classes = useStyles();
     return (
         <Container maxWidth="xl" disableGutters="true">
             <header className="App-header">
@@ -31,17 +30,7 @@ const Home = (props) => {
                 <div className="links" aria-label="breadcrumb">
                     <ModalAbout />
                     <ModalVision />
-                    <Button
-                        variant="contained"
-                        color="primary"
-                        size="large"
-                        className={classes.margin}
-                    >
-                        <Link href="/projects" className={classes.text}>
-                            {" "}
-                            Projects{" "}
-                        </Link>
-                    </Button>
+                    <ModalProjects />
                 </div>
                 <div>
                     <Link
