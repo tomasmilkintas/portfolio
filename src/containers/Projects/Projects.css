@@ -1,5 +1,39 @@
-.main {
-    background-color: #282c34;
-    color: white;
-    height: 100vh;
+.root {
+    height: 80%;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f3f0f0;
+    color: black;
+    overflow: scroll;
+}
+
+.screenshot {
+    width: 90%;
+    height: 70%;
+    display: block;
+    margin: 3vh auto;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1.3vh auto 0;
+}
+
+@media (min-width: 800px) {
+    .root {
+        width: 40%;
+        height: 76%;
+    }
+
+    .screenshot {
+        width: 60%;
+        height: 40%;
+    }
 }

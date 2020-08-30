@@ -2,3 +2,10 @@
     display: flex;
     justify-content: space-around;
 }
+
+@media (max-width: 600px) {
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+}

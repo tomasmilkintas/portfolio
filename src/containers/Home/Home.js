@@ -23,7 +23,7 @@ import freelancer from "../../freelancer.svg";
 
 const Home = (props) => {
     return (
-        <Container maxWidth="xl" disableGutters="true">
+        <Container maxWidth="xl" disableGutters={true}>
             <header className="App-header">
                 <img src={freelancer} className="App-logo" alt="logo" />
                 <h1>Tomas Milkintas' Portfolio Site</h1>

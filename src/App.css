@@ -30,3 +30,10 @@
 .icons:hover {
     color: #6c63ff;
 }
+
+@media (max-width: 600px) {
+    .App-logo {
+        height: 29vh;
+        margin-top: 2vh;
+    }
+}
