@@ -38,7 +38,7 @@ const carouselSteps = [
         using the Serverless Framework. Serverless Framework works through AWS services, so got a
         chance to utilize quite a few of their services (IAM, Cognito, S3, Route53, DynamoDB, 
         CloudWatch, API Gateway). In the picture you see card details being collected. This allows
-        to buy more space for your storage using Stripe service`,
+        to buy more space for your storage using Stripe service.`,
         website: "https://serverless-stack-app.netlify.app/",
         github: "https://github.com/tomasmilkintas/serverless-stack-client",
     },

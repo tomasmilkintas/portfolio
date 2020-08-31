@@ -5,21 +5,9 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Link from "@material-ui/core/Link";
 import ModalAbout from "../Modals/ModalAbout";
-import ModalVision from "../Modals/ModalVision";
+// import ModalVision from "../Modals/ModalVision";
 import ModalProjects from "../Modals/ModalProjects";
 import freelancer from "../../freelancer.svg";
-// import { makeStyles } from "@material-ui/core/styles";
-
-// const useStyles = makeStyles((theme) => ({
-//     margin: {
-//         margin: theme.spacing(1),
-//         padding: theme.spacing(1.5),
-//         width: "180px",
-//     },
-//     text: {
-//         color: "white",
-//     },
-// }));
 
 const Home = (props) => {
     return (
@@ -29,7 +17,7 @@ const Home = (props) => {
                 <h1>Tomas Milkintas' Portfolio Site</h1>
                 <div className="links" aria-label="breadcrumb">
                     <ModalAbout />
-                    <ModalVision />
+                    {/* <ModalVision /> */}
                     <ModalProjects />
                 </div>
                 <div>

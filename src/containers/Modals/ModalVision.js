@@ -59,8 +59,7 @@ export default function TransitionsModal() {
                 <Fade in={open}>
                     <div className={classes.paper}>
                         <h2 id="transition-modal-title">Vision</h2>
-                        <p id="transition-modal-description">
-                            {" "}
+                        <p className="description">
                             I'm really excited to be part of the tech industry in this day and age.
                             With the VR, AR, IoT, Machine Learning and quantum computing making
                             waves, left and right, it's a great time to be alive and take part in it

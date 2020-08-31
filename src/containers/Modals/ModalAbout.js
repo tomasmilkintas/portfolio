@@ -59,13 +59,13 @@ export default function TransitionsModal() {
             >
                 <Fade in={open}>
                     <div className={classes.paper}>
-                        <h2 id="transition-modal-title">About</h2>
-                        <p id="transition-modal-description">
+                        <h2 id="title">About</h2>
+                        <p className="description">
                             Fascinated with the way development works on websites and web apps
                             alike. How a few lines of code can become something so extraordinary.
                         </p>
 
-                        <p>
+                        <p className="description">
                             Actively looking for a junior developer position within a dynamic,
                             innovative and collaborative team.
                         </p>

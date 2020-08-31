@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import MobileStepper from "@material-ui/core/MobileStepper";
 import Button from "@material-ui/core/Button";
@@ -7,6 +7,7 @@ import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import Link from "@material-ui/core/Link";
+// import ClearIcon from "@material-ui/icons/Clear";
 
 import "./Projects.css";
 import carouselSteps from "./carouselSteps";
@@ -21,8 +22,42 @@ const useStyles = makeStyles((theme) => ({
 export default function TextMobileStepper() {
     const classes = useStyles();
     const theme = useTheme();
-    const [activeStep, setActiveStep] = React.useState(0);
+    const [activeStep, setActiveStep] = useState(0);
     const maxSteps = carouselSteps.length;
+
+    const leftArrFunction = useCallback(
+        (event) => {
+            if (event.keyCode === 37 && activeStep) {
+                handleBack();
+            }
+        },
+        [activeStep]
+    );
+
+    useEffect(() => {
+        document.addEventListener("keydown", leftArrFunction, false);
+
+        return () => {
+            document.removeEventListener("keydown", leftArrFunction, false);
+        };
+    }, [leftArrFunction]);
+
+    const rightArrFunction = useCallback(
+        (event) => {
+            if (event.keyCode === 39 && activeStep !== maxSteps - 1) {
+                handleNext();
+            }
+        },
+        [activeStep, maxSteps]
+    );
+
+    useEffect(() => {
+        document.addEventListener("keydown", rightArrFunction, false);
+
+        return () => {
+            document.removeEventListener("keydown", rightArrFunction, false);
+        };
+    }, [rightArrFunction]);
 
     const handleNext = () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -34,6 +69,7 @@ export default function TextMobileStepper() {
 
     return (
         <div className="root">
+            {/* <ClearIcon className="clear" fontSize="large" onClick={triggerEsc} /> */}
             <CardContent>
                 <h2>{carouselSteps[activeStep].label}</h2>
                 <img
@@ -41,7 +77,7 @@ export default function TextMobileStepper() {
                     src={carouselSteps[activeStep].imgPath}
                     alt={carouselSteps[activeStep].label}
                 />
-                <p>{carouselSteps[activeStep].description}</p>
+                <p className="description">{carouselSteps[activeStep].description}</p>
             </CardContent>
             <CardActions className={classes.actions}>
                 <Button size="small" color="primary">
@@ -57,7 +93,7 @@ export default function TextMobileStepper() {
             </CardActions>
             <MobileStepper
                 steps={maxSteps}
-                position="bottom"
+                position="static"
                 variant="dots"
                 activeStep={activeStep}
                 nextButton={

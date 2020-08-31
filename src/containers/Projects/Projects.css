@@ -2,9 +2,9 @@
     height: 80%;
     width: 90%;
     margin: 0 auto;
-    background-color: #f3f0f0;
+    background-color: lemonchiffon;
     color: black;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .screenshot {
@@ -12,10 +12,19 @@
     height: 70%;
     display: block;
     margin: 3vh auto;
+    border-radius: 2%;
 }
 
 p {
     text-align: center;
+}
+
+.clear {
+    color: black;
+    position: absolute;
+    font-size: large;
+    right: 9%;
+    top: 14%;
 }
 
 h2 {
@@ -35,5 +44,10 @@ h2 {
     .screenshot {
         width: 60%;
         height: 40%;
+    }
+
+    .clear {
+        right: 32%;
+        top: 16%;
     }
 }

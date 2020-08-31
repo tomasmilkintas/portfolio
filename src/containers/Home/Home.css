@@ -3,9 +3,17 @@
     justify-content: space-around;
 }
 
+h1 {
+    margin: 6vh 3vw;
+}
+
 @media (max-width: 600px) {
     .links {
         display: flex;
         flex-direction: column;
+    }
+
+    h1 {
+        margin: 4vh auto;
     }
 }
