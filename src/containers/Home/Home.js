@@ -5,20 +5,18 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Link from "@material-ui/core/Link";
 import ModalAbout from "../Modals/ModalAbout";
-// import ModalVision from "../Modals/ModalVision";
 import ModalProjects from "../Modals/ModalProjects";
 import freelancer from "../../freelancer.svg";
 
 const Home = (props) => {
     return (
         <Container maxWidth="xl" disableGutters={true}>
-            <header className="App-header">
+            <div className="App-header">
                 <img src={freelancer} className="App-logo" alt="logo" />
                 <h1>Tomas Milkintas' Portfolio Site</h1>
                 <div className="links" aria-label="breadcrumb">
-                    <ModalAbout />
-                    {/* <ModalVision /> */}
                     <ModalProjects />
+                    <ModalAbout />
                 </div>
                 <div>
                     <Link
@@ -38,7 +36,7 @@ const Home = (props) => {
                         <GitHubIcon className="icons" fontSize="large" />
                     </Link>
                 </div>
-            </header>
+            </div>
         </Container>
     );
 };

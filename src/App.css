@@ -4,9 +4,10 @@
 }
 
 .App-logo {
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
     height: 48vh;
     width: 75%;
+    object-fit: contain;
     pointer-events: none;
 }
 
@@ -29,11 +30,13 @@
 
 .icons:hover {
     color: #6c63ff;
+    transition: color 100ms ease-out;
 }
 
 @media (max-width: 600px) {
     .App-logo {
         height: 29vh;
         margin-top: 2vh;
+        object-fit: contain;
     }
 }
