@@ -1,0 +1,30 @@
+.project {
+    height: 80vh;
+    width: 100%;
+    margin: 10px 30px;
+
+    padding: 20px;
+}
+
+.project__image {
+    object-fit: contain;
+    height: 300px;
+}
+
+.project__title {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.project__description {
+    margin-bottom: 20px;
+}
+
+.project__link {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.project__link > a {
+    text-decoration: none;
+}

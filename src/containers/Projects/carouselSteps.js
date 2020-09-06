@@ -10,6 +10,9 @@ const carouselSteps = [
         ways to utilize it.`,
         website: "https://react-my-burger-app-660cf.firebaseapp.com/",
         github: "https://github.com/tomasmilkintas/burger-app",
+        // tech used
+        // bulletpoint 1
+        // bulletpoint 2
     },
     {
         label: "Picture MasterPiece",
@@ -35,10 +38,31 @@ const carouselSteps = [
         label: "Serverless Notes Storing App",
         imgPath: images[3],
         description: `The Notes Storing App using both the backend and the frontend to connect it
-        using the Serverless Framework. Serverless Framework works through AWS services, so got a
-        chance to utilize quite a few of their services (IAM, Cognito, S3, Route53, DynamoDB, 
-        CloudWatch, API Gateway). In the picture you see card details being collected using Stripe service
-        for extra storage space.`,
+        using the Serverless Framework.`,
+        website: "https://serverless-stack-app.netlify.app/",
+        github: "https://github.com/tomasmilkintas/serverless-stack-client",
+    },
+    {
+        label: "Serverless Notes Storing App",
+        imgPath: images[3],
+        description: `The Notes Storing App using both the backend and the frontend to connect it
+        using the Serverless Framework.`,
+        website: "https://serverless-stack-app.netlify.app/",
+        github: "https://github.com/tomasmilkintas/serverless-stack-client",
+    },
+    {
+        label: "Serverless Notes Storing App",
+        imgPath: images[3],
+        description: `The Notes Storing App using both the backend and the frontend to connect it
+        using the Serverless Framework.`,
+        website: "https://serverless-stack-app.netlify.app/",
+        github: "https://github.com/tomasmilkintas/serverless-stack-client",
+    },
+    {
+        label: "Serverless Notes Storing App",
+        imgPath: images[3],
+        description: `The Notes Storing App using both the backend and the frontend to connect it
+        using the Serverless Framework.`,
         website: "https://serverless-stack-app.netlify.app/",
         github: "https://github.com/tomasmilkintas/serverless-stack-client",
     },
