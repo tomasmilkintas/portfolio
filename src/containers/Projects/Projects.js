@@ -11,9 +11,11 @@ function Projects() {
                 <Project
                     label={item.label}
                     imgPath={item.imgPath}
-                    description={item.description}
                     github={item.github}
                     website={item.website}
+                    tech={item.tech}
+                    bulletPointOne={item.bulletPointOne}
+                    bulletPointTwo={item.bulletPointTwo}
                 />
             ))}
             {/* </div> */}

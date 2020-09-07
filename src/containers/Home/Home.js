@@ -13,7 +13,7 @@ const Home = (props) => {
         <div className="home">
             <div className="App-header">
                 <img src={freelancer} className="App-logo" alt="logo" />
-                <h1>Tomas Milkintas' Portfolio Site</h1>
+                <h1 className="home__title">Tomas Milkintas' Portfolio Site</h1>
                 <div className="links" aria-label="breadcrumb">
                     <ModalProjects />
                     <ModalAbout />
@@ -37,7 +37,6 @@ const Home = (props) => {
                     </Link>
                 </div>
             </div>
-            {/* <div className="home__fadeBottom" /> */}
 
             <div className="home__projects">
                 <h1 className="home__projectsTitle">Projects</h1>

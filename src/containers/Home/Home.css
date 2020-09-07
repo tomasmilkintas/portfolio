@@ -12,8 +12,8 @@
     justify-content: space-around;
 }
 
-h1 {
-    margin: 6vh 3vw;
+.home__title {
+    margin: 4vh 3vw;
 }
 
 .icons:hover {
@@ -22,8 +22,17 @@ h1 {
 }
 
 .home__projects {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     background-color: lightsteelblue;
+}
+
+.home__projectsTitle {
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 /* .home__fadeBottom {
@@ -39,5 +48,9 @@ h1 {
 
     h1 {
         margin: 4vh auto;
+    }
+
+    .home__projectsTitle {
+        margin: 8vh auto 0;
     }
 }
