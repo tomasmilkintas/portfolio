@@ -5,8 +5,6 @@ import Project from "./Project";
 function Projects() {
     return (
         <div className="projects">
-            {/* <h1 className="projects__title">Projects</h1> */}
-            {/* <div className="projects__reel"> */}
             {carouselSteps.map((item) => (
                 <Project
                     label={item.label}
@@ -18,7 +16,6 @@ function Projects() {
                     bulletPointTwo={item.bulletPointTwo}
                 />
             ))}
-            {/* </div> */}
         </div>
     );
 }

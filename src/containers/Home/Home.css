@@ -35,10 +35,20 @@
     margin-bottom: 20px;
 }
 
-/* .home__fadeBottom {
-    height: 5.4rem;
-    background-image: linear-gradient(180deg, #2525259c, lightsteelblue);
-} */
+.home__button {
+    background-color: #6c63ff;
+    color: white;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border-radius: 30px;
+}
+
+#bottom {
+    transition: all 1s ease-in;
+}
 
 @media (max-width: 600px) {
     .links {
@@ -46,11 +56,11 @@
         flex-direction: column;
     }
 
-    h1 {
+    .home__title {
         margin: 4vh auto;
     }
 
     .home__projectsTitle {
-        margin: 8vh auto 0;
+        margin: 6vh auto 0;
     }
 }

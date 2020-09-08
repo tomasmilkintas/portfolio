@@ -3,10 +3,12 @@ import "./Home.css";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Link from "@material-ui/core/Link";
-import ModalAbout from "../Modals/ModalAbout";
-import ModalProjects from "../Modals/ModalProjects";
+// import ModalAbout from "../Modals/ModalAbout";
+// import ModalProjects from "../Modals/ModalProjects";
 import freelancer from "../../freelancer.svg";
 import Projects from "../Projects/Projects";
+
+import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 const Home = (props) => {
     return (
@@ -15,8 +17,11 @@ const Home = (props) => {
                 <img src={freelancer} className="App-logo" alt="logo" />
                 <h1 className="home__title">Tomas Milkintas' Portfolio Site</h1>
                 <div className="links" aria-label="breadcrumb">
-                    <ModalProjects />
-                    <ModalAbout />
+                    {/* <ModalProjects />
+                    <ModalAbout /> */}
+                    <a className="home__button" href="#bottom">
+                        <KeyboardArrowDownIcon />
+                    </a>
                 </div>
                 <div>
                     <Link
@@ -38,8 +43,9 @@ const Home = (props) => {
                 </div>
             </div>
 
-            <div className="home__projects">
+            <div className="home__projects" id="bottom">
                 <h1 className="home__projectsTitle">Projects</h1>
+                {/* <p className="home__projectsNote">(scroll sideways)</p> */}
                 <div className="home__projectSlider">
                     <Projects />
                 </div>
