@@ -1,6 +1,7 @@
 import React from "react";
 import carouselSteps from "./carouselSteps";
 import Project from "./Project";
+import "./Projects.css";
 
 function Projects() {
     return (

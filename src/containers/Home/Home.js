@@ -3,23 +3,20 @@ import "./Home.css";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Link from "@material-ui/core/Link";
-// import ModalAbout from "../Modals/ModalAbout";
-// import ModalProjects from "../Modals/ModalProjects";
 import freelancer from "../../freelancer.svg";
 import Projects from "../Projects/Projects";
 
+// import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 const Home = (props) => {
     return (
         <div className="home">
-            <div className="App-header">
+            <div className="App-header" id="top">
                 <img src={freelancer} className="App-logo" alt="logo" />
                 <h1 className="home__title">Tomas Milkintas' Portfolio Site</h1>
                 <div className="links" aria-label="breadcrumb">
-                    {/* <ModalProjects />
-                    <ModalAbout /> */}
-                    <a className="home__button" href="#bottom">
+                    <a className="home__arrowDown" href="#bottom">
                         <KeyboardArrowDownIcon />
                     </a>
                 </div>
@@ -45,9 +42,12 @@ const Home = (props) => {
 
             <div className="home__projects" id="bottom">
                 <h1 className="home__projectsTitle">Projects</h1>
-                {/* <p className="home__projectsNote">(scroll sideways)</p> */}
+                <p className="home__projectsNote">(Scroll Sideways)</p>
                 <div className="home__projectSlider">
                     <Projects />
+                    {/* <a href="#top" className="home__arrowUp">
+                        Top
+                    </a> */}
                 </div>
             </div>
         </div>

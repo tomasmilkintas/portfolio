@@ -35,7 +35,11 @@
     margin-bottom: 20px;
 }
 
-.home__button {
+.home__projectsNote {
+    font-size: 10px;
+}
+
+.home__arrowDown {
     background-color: #6c63ff;
     color: white;
     padding: 14px;
@@ -44,6 +48,19 @@
     align-items: center;
     outline: none;
     border-radius: 30px;
+}
+
+.home__arrowUp {
+    background-color: #6c63ff;
+    color: white;
+    padding: 14px;
+    outline: none;
+    border-radius: 40px;
+    width: 30px !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #bottom {
