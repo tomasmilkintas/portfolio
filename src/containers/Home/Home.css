@@ -24,7 +24,7 @@
 .home__projects {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 95vh;
     background-color: lightsteelblue;
 }
 
@@ -47,20 +47,29 @@
     justify-content: center;
     align-items: center;
     outline: none;
-    border-radius: 30px;
+    border-radius: 50%;
 }
 
 .home__arrowUp {
     background-color: #6c63ff;
     color: white;
-    padding: 14px;
+    padding: 12px !important;
     outline: none;
-    border-radius: 40px;
-    width: 30px !important;
-    position: relative;
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+}
+
+.home__footer {
+    background-color: #282c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
 }
 
 #bottom {
@@ -79,5 +88,10 @@
 
     .home__projectsTitle {
         margin: 6vh auto 0;
+    }
+
+    .home__someButton {
+        width: 30px !important;
+        height: 30px !important;
     }
 }

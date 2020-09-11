@@ -6,7 +6,7 @@ import Link from "@material-ui/core/Link";
 import freelancer from "../../freelancer.svg";
 import Projects from "../Projects/Projects";
 
-// import ExpandLessIcon from "@material-ui/icons/ExpandLess";
+import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 const Home = (props) => {
@@ -45,10 +45,12 @@ const Home = (props) => {
                 <p className="home__projectsNote">(Scroll Sideways)</p>
                 <div className="home__projectSlider">
                     <Projects />
-                    {/* <a href="#top" className="home__arrowUp">
-                        Top
-                    </a> */}
                 </div>
+            </div>
+            <div className="home__footer">
+                <a href="#top" className="home__arrowUp">
+                    <ExpandLessIcon />
+                </a>
             </div>
         </div>
     );
