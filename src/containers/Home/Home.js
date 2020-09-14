@@ -8,6 +8,7 @@ import Projects from "../Projects/Projects";
 
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
+// import CopyEmail from "../copy/copyEmail";
 
 const Home = (props) => {
     return (
@@ -19,6 +20,7 @@ const Home = (props) => {
                     <a className="home__arrowDown" href="#bottom">
                         <KeyboardArrowDownIcon />
                     </a>
+                    {/* <CopyEmail /> */}
                 </div>
                 <div>
                     <Link
