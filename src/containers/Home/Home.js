@@ -50,9 +50,11 @@ const Home = (props) => {
                 </div>
             </div>
             <div className="home__footer">
+                <p className="home__footerText">tomas.milkintas1@gmail.com</p>
                 <a href="#top" className="home__arrowUp">
                     <ExpandLessIcon />
                 </a>
+                <p className="home__footerText"> TM &#169; 2020</p>
             </div>
         </div>
     );
