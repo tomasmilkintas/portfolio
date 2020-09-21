@@ -3,8 +3,8 @@
     align-items: center;
     overflow-y: hidden;
     overflow-x: scroll;
-    margin-right: 4vw;
-    margin-left: 4vw;
+    margin-right: 8vw;
+    margin-left: 2vw;
 }
 
 p {

@@ -47,14 +47,14 @@ const Home = (props) => {
                 </div>
             </div>
 
-            <div className="home__projects" id="bottom">
+            <div className="home__projects">
                 <h1 className="home__projectsTitle">Projects</h1>
                 <p className="home__projectsNote">(Scroll Sideways)</p>
                 <div className="home__projectSlider">
                     <Projects />
                 </div>
             </div>
-            <div className="home__footer">
+            <div className="home__footer" id="bottom">
                 <div className="home__footerText">
                     {" "}
                     <EmailIcon />
