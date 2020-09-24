@@ -49,7 +49,10 @@ const Home = (props) => {
 
             <div className="home__projects">
                 <h1 className="home__projectsTitle">Projects</h1>
-                <p className="home__projectsNote">(Scroll Sideways)</p>
+
+                {window.screen.width < 1500 && (
+                    <p className="home__projectsNote">(Scroll Sideways)</p>
+                )}
                 <div className="home__projectSlider">
                     <Projects />
                 </div>

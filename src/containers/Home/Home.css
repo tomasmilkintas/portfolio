@@ -24,8 +24,9 @@
 .home__projects {
     display: flex;
     flex-direction: column;
-    height: 93vh;
+    min-height: 93vh;
     background-color: lightsteelblue;
+    overflow-y: scroll;
 }
 
 .home__projectsTitle {
@@ -70,7 +71,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 8vh;
+    min-height: 8vh;
 }
 
 .home__footerText {

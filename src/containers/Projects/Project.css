@@ -49,3 +49,9 @@
         margin-top: 0px;
     }
 }
+
+@media (max-height: 800px) {
+    .project__image {
+        height: 55%;
+    }
+}
